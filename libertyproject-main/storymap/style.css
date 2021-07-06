@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, arial;
+}
+a,
+a:visited {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b6b6b6;
+}
+
+#map {
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+#header {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  background-color: #475561d8;
+}
+#header h1,
+#header h2,
+#header p {
+  margin: 0;
+  padding: 2vh 2vw;
+  text-align: center;
+  color: #eeeeee;
+  font-family: helvetica;
+  font-size: 16px;
+  letter-spacing: 0.9px;
+}
+#footer {
+  width: 100%;
+  min-height: 5vh;
+  background-color: #475561d8;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+
+#footer p {
+  font-size: 13px;
+  color: #eeeeee;
+  font-family: helvetica;
+  text-align: center;
+  padding: 2vh 2vw;
+  margin: 0;
+  /* padding: 10px 0px 10px; */
+  /* line-height: 10px; */
+}
+
+#features {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.hidden {
+  visibility: hidden;
+}
+.centered {
+  width: 50vw;
+  margin: 0 auto;
+}
+.lefty {
+  width: 33vw;
+  margin-left: 5vw;
+}
+.righty {
+  width: 33vw;
+  margin-left: 62vw;
+}
+.fully {
+  width: 100%;
+  margin: auto;
+}
+.light {
+  color: #444;
+  background-color: #fafafa;
+}
+.dark {
+  color: #fafafa;
+  background-color: #444;
+}
+
+/* Chapters appearance whilst transisitioning between */
+.step {
+  padding-bottom: 45vh;
+  margin-bottom: 6vh;
+  opacity: 0.95;
+}
+
+/** Opacity of chapters whilst it is active */
+.step.active {
+  opacity: 0.9;
+}
+
+/** Headings for Chapters */
+#features h3 {
+  font-weight: 800;
+  font-family: helvetica;
+  color: #38393a;
+  font-size: 16px;
+  letter-spacing: 0.9px;
+  background-color: #fefdeff3;
+  padding: 5px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+#features p {
+  font-size: 15px;
+  font-family: helvetica;
+  color: #333435;
+  padding: 5px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  margin: 2px 8px 4px;
+}
+
+.liberty {
+  background-color: #f3a9cc;
+}
+
+/* Chapter slides */
+.step div {
+  padding: 18px 0px 18px;
+  line-height: 25px;
+  border-radius: 8px;
+}
+
+/* Images within the chapters */
+.step img {
+  width: 100%;
+}
+
+@media (max-width: 750px) {
+  .centered,
+  .lefty,
+  .righty,
+  .fully {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+/* Fix issue on mobile browser where scroll breaks  */
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan
+  .mapboxgl-canvas {
+  touch-action: unset;
+}
