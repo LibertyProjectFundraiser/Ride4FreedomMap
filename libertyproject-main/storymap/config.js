@@ -1,9 +1,9 @@
 var config = {
   // Refernence the mapbox style here
-  style: "mapbox://styles/vanritto/ckpeq5qti0hqv17qfe1nxbpe1",
+  style: "mapbox://styles/libertyproject/ckqslpquk6nbf18lgn4s7k64c",
   accessToken:
     // Replace with clients accessToken
-    "pk.eyJ1IjoidmFucml0dG8iLCJhIjoiY2ttd3MwbmIxMGh2azJubjh5NHpmbWloaSJ9.cHakwI5tJ_9g4G56n5tlFQ",
+    "pk.eyJ1IjoibGliZXJ0eXByb2plY3QiLCJhIjoiY2twem9ud2czMDV3dDJ2bzA1YnNqeDBhZSJ9.JLwyiTIRdCzEGCTbtxRJ7g",
   showMarkers: false,
   theme: "liberty",
   // true or false to turn 3D terrain on/off
